@@ -1,0 +1,38 @@
+CalCulator Nutrition Model (Qwen3.5-2B fine-tune)
+Copyright 2026 WellocityApps
+https://github.com/WellocityApps/CalCulator-QWEN2B-Model
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+Under Section 4(d) of that license, any redistribution of this work or of a
+derivative work (including modified or re-quantized model weights) must
+include a readable copy of the attribution notices in this NOTICE file.
+
+-------------------------------------------------------------------------------
+Base model
+-------------------------------------------------------------------------------
+Qwen3.5-2B, Copyright Alibaba Cloud (Qwen team), Apache License 2.0.
+https://huggingface.co/Qwen/Qwen3.5-2B
+The fine-tuned weights in this project are a modified version of that model.
+
+-------------------------------------------------------------------------------
+Training datasets
+-------------------------------------------------------------------------------
+The model was trained on the following datasets. No dataset images are
+redistributed in this repository.
+
+Nutrition5k (Google Research), Creative Commons Attribution 4.0 (CC BY 4.0).
+https://github.com/google-research-datasets/Nutrition5k
+  Thames, Q., Karpur, A., Norris, W., Xia, F., Panait, L., Weyand, T., Sim, J.
+  "Nutrition5k: Towards Automatic Nutritional Understanding of Generic Food."
+  Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition (CVPR), 2021, pp. 8903-8911.
+
+SNAPMe, Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0).
+https://doi.org/10.15482/USDA.ADC/1528346
+  Chin, E. L., Larke, J. A., Bouzid, Y. Y., Nguyen, T., Vainberg, Y.,
+  Smilowitz, J. T., Lemay, D. "SNAPMe: A Benchmark Dataset of Food Photos
+  with Food Records for Evaluation of Computer Vision Algorithms in the
+  Context of Dietary Assessment." Ag Data Commons, 2022.
+  Larke, J. A., et al. "Surveying Nutrient Assessment with Photographs of
+  Meals (SNAPMe): A Benchmark Dataset of Food Photos for Dietary Assessment."
+  Nutrients 15(23):4972, 2023. https://www.mdpi.com/2072-6643/15/23/4972

@@ -136,6 +136,29 @@ To get results close to the ones above, use the same prompt as training:
 - **JSON is validated, not enforced.** It is checked after generation, not guaranteed by constrained decoding. About 0.3–0.8 % of outputs on the test set were not valid JSON.
 - **Estimates only.** The outputs are not medical or dietary advice.
 
-## Data and licenses
+## License and credit
 
-Nutrition5k (Google Research) and SNAPMe each have their own terms. See their original sources before reusing the data. The base model is licensed by Qwen; see the [base model card](https://huggingface.co/Qwen/Qwen3.5-2B). This repository contains no training images.
+Everything in this repository is released under the [Apache License 2.0](LICENSE): code, notebook, documentation, and the model weights published in the release. You can use, modify, redistribute, and sell it, including in closed-source and commercial products.
+
+**Credit is required.** If you redistribute this work or anything derived from it (for example fine-tuned or re-quantized weights), you must include the [`NOTICE`](NOTICE) file. It credits this repository, the Qwen3.5-2B base model, and the training datasets.
+
+| Component | License | Credit |
+|---|---|---|
+| Base model: [Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B) | Apache 2.0 | Alibaba Cloud (Qwen team) |
+| Dataset: [Nutrition5k](https://github.com/google-research-datasets/Nutrition5k) | CC BY 4.0 | Thames et al., CVPR 2021 |
+| Dataset: [SNAPMe](https://doi.org/10.15482/USDA.ADC/1528346) | CC BY-SA 4.0 | Chin, Larke et al., Ag Data Commons 2022; Larke et al., *Nutrients* 2023 |
+
+This repository contains no dataset images. If you retrain with the datasets themselves, follow their licenses. In particular, SNAPMe is ShareAlike: material adapted from it must be shared under CC BY-SA 4.0.
+
+### Citation
+
+```bibtex
+@misc{calculator_qwen2b_nutrition_2026,
+  title  = {CalCulator Nutrition Model: Qwen3.5-2B fine-tuned for meal nutrition estimation},
+  author = {WellocityApps},
+  year   = {2026},
+  url    = {https://github.com/WellocityApps/CalCulator-QWEN2B-Model}
+}
+```
+
+Please also cite [Nutrition5k](https://arxiv.org/abs/2103.03375) and [SNAPMe](https://www.mdpi.com/2072-6643/15/23/4972).
