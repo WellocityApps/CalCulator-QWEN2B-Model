@@ -1,0 +1,6 @@
+# Weights are published as GitHub Release assets, not in git.
+/release-assets/
+*.gguf
+*.safetensors
+.DS_Store
+.ipynb_checkpoints/
