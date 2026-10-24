@@ -1,4 +1,6 @@
-# Weights are published as GitHub Release assets, not in git.
+# Model weights are served from this repo's GitHub Release (tag
+# v2026.10.24-q4km), which is where the CalCulator app downloads them.
+# GitHub rejects files over 100 MB in git, so they are not committed.
 /release-assets/
 *.gguf
 *.safetensors

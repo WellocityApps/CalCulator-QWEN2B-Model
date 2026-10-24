@@ -10,7 +10,9 @@ It runs on-device in the CalCulator app through llama.cpp, using a Q4_K_M text m
 
 ## Downloads
 
-The weights are attached to the [GitHub Release](https://github.com/WellocityApps/CalCulator-QWEN2B-Model/releases/tag/v2026.10.24-q4km) `v2026.10.24-q4km`, because git cannot hold files of this size.
+The weights are attached to this repository's [GitHub Release](https://github.com/WellocityApps/CalCulator-QWEN2B-Model/releases/tag/v2026.10.24-q4km) `v2026.10.24-q4km`. GitHub does not allow files this large in git itself.
+
+The CalCulator app downloads its model from this release. It fetches the two `.gguf` files and checks each one against the size and SHA-256 compiled into the app. Do not rename or replace those files in this release: installed apps would reject them. To ship a new model, publish a new release with a new tag.
 
 | File | Size | Use |
 |---|---|---|
